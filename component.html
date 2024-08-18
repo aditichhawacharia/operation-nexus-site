@@ -1,451 +1,238 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/Ig3nPy3wcim
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Led Marketing Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #706E95;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .nav-button {
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #6c757d;
+        }
+        .why-us-about {
+            display: flex;
+            background-color: #6D738B;
+            padding: 4rem 2rem;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+        .why-us, .about-us {
+            flex: 1;
+            padding: 0 2rem;
+        }
+        .why-us h1, .about-us h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .why-us h1 {
+            margin-bottom: 2rem;
+        }
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .why-us-item {
+            background-color: #ECEBF9;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,4);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .why-us-item h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .why-us-item p {
+            font-size: 1rem;
+            color: grey;
+            margin: 0;
+        }
+        .services {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-item {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trusted-by {
+            background-color: #f1f3f5;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .testimonial {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .about-us {
+            flex: 1;
+            padding: 0 2rem;
+            text-align: center; /* Center the text */
+            font-family: 'Cabin', sans-serif; /* Apply the Cabin font */
+        }
+        .about-us h2 {
+            font-size: 2rem;
+            font-family: 'Poppins',sans-serif;
+            margin-bottom: 1rem;
+            font-weight: 700; /* Make the header bold */
+            color: #ECEBF9; /* Ensure color consistency */
+        }
+        .about-us p {
+            font-size: 1.4rem; /* Increase font size for better readability */
+            color: #ECEBF9; /* Ensure color consistency */
+            font-weight: 400; /* Normal weight for paragraph text */
+            margin: 8; /* Remove default margins */
+            padding: 0; /* Remove padding */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <button class="nav-button">Speak to Our Team</button>
+    </nav>
 
-<style>:root{--background:0 0% 100%;--foreground:240 10% 3.9%;--card:0 0% 100%;--card-foreground:240 10% 3.9%;--popover:0 0% 100%;--popover-foreground:240 10% 3.9%;--primary:240 5.9% 10%;--primary-foreground:0 0% 98%;--secondary:240 4.8% 95.9%;--secondary-foreground:240 5.9% 10%;--muted:240 4.8% 95.9%;--muted-foreground:240 3.8% 45%;--accent:240 4.8% 95.9%;--accent-foreground:240 5.9% 10%;--destructive:0 72% 51%;--destructive-foreground:0 0% 98%;--border:240 5.9% 90%;--input:240 5.9% 90%;--ring:240 5.9% 10%;--chart-1:173 58% 39%;--chart-2:12 76% 61%;--chart-3:197 37% 24%;--chart-4:43 74% 66%;--chart-5:27 87% 67%;--radius:0.5rem;}img[src="/placeholder.svg"],img[src="/placeholder-user.jpg"]{filter:sepia(.3) hue-rotate(-60deg) saturate(.5) opacity(0.8) }</style>
-<style>h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
-</style>
-<style>body { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
-</style>
-<div class="flex flex-col min-h-dvh">
-  <header class="w-full bg-primary py-6 px-4 md:px-6">
-    <div class="container flex items-center justify-between">
-      <a class="text-primary-foreground" href="#">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="h-6 w-6"
-        >
-          <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-        </svg>
-        <span class="sr-only">Student Led Marketing Agency</span>
-      </a>
-      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-primary-foreground">
-        Speak to Our Team
-      </button>
-    </div>
-  </header>
-  <main class="flex-1">
-    <section class="w-full py-12 md:py-24 lg:py-32">
-      <div class="container grid grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-6 lg:gap-12">
-        <div class="space-y-4">
-          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Student Led Marketing Agency</h1>
-          <p class="text-muted-foreground md:text-xl">
-            We help businesses and organizations create enticing websites
-          </p>
-        </div>
-        <div class="relative">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="h-[300px] w-[300px] animate-spin-slow rounded-full bg-gradient-to-r from-primary to-primary/50"></div>
-          </div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="h-[250px] w-[250px] animate-spin-slow rounded-full bg-gradient-to-r from-primary/50 to-primary"></div>
-          </div>
-          <div class="relative z-10 flex h-[400px] w-full items-center justify-center">
-            <div class="h-[200px] w-[200px] rounded-full bg-primary/10 p-4">
-              <div class="h-full w-full rounded-full bg-primary/20 p-4">
-                <div class="h-full w-full rounded-full bg-primary/30 p-4">
-                  <div class="h-full w-full rounded-full bg-primary/40 p-4">
-                    <div class="h-full w-full rounded-full bg-primary/50 p-4">
-                      <div class="h-full w-full rounded-full bg-primary/60 p-4">
-                        <div class="h-full w-full rounded-full bg-primary/70 p-4">
-                          <div class="h-full w-full rounded-full bg-primary/80 p-4">
-                            <div class="h-full w-full rounded-full bg-primary/90 p-4">
-                              <div class="h-full w-full rounded-full bg-primary"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <header class="header">
+        <h1>Student Led Marketing Agency</h1>
+        <h2>We help businesses and organizations create enticing websites</h2>
+    </header>
+
+    <section class="why-us-about">
+        <div class="why-us">
+            <h1 style="color:#ECEBF9">Why Us?</h1>
+            <div class="why-us-grid">
+                <div class="why-us-item">
+                    <h3>$2.5M+</h3>
+                    <p>Total Revenue Created</p>
                 </div>
-              </div>
+                <div class="why-us-item">
+                    <h3>250+</h3>
+                    <p>Clients Helped</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>100M+</h3>
+                    <p>Media Impressions</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>5</h3>
+                    <p>Services</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>We are a student-led marketing agency that specializes in creating engaging and effective websites for businesses and organizations. Our team of talented designers, developers, and strategists work closely with our clients to understand their unique needs and goals, and then craft custom solutions that help them stand out in the digital landscape.</p>
+        </div>
     </section>
-    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
-      <div class="container grid grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-6 lg:gap-12">
-        <div class="space-y-4">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Why Us</h2>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="rounded-lg bg-background p-4 shadow">
-              <h3 class="text-2xl font-bold">$2.5M+</h3>
-              <p class="text-muted-foreground">Total Revenue Created</p>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Web Design</h3>
+                <p>Crafting visually stunning and user-friendly websites that captivate your audience.</p>
             </div>
-            <div class="rounded-lg bg-background p-4 shadow">
-              <h3 class="text-2xl font-bold">250+</h3>
-              <p class="text-muted-foreground">Clients Helped</p>
+            <div class="service-item">
+                <h3>Digital Marketing</h3>
+                <p>Developing and executing targeted digital marketing strategies to drive growth and engagement.</p>
             </div>
-            <div class="rounded-lg bg-background p-4 shadow">
-              <h3 class="text-2xl font-bold">100M+</h3>
-              <p class="text-muted-foreground">Media Impressions</p>
+            <div class="service-item">
+                <h3>Branding</h3>
+                <p>Crafting unique and memorable brand identities that resonate with your target audience.</p>
             </div>
-            <div class="rounded-lg bg-background p-4 shadow">
-              <h3 class="text-2xl font-bold">5</h3>
-              <p class="text-muted-foreground">Services</p>
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Building custom, high-performing websites and web applications tailored to your needs.</p>
             </div>
-          </div>
         </div>
-        <div class="space-y-4">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Us</h2>
-          <p class="text-muted-foreground md:text-xl">
-            We are a student-led marketing agency that specializes in creating engaging and effective websites for
-            businesses and organizations. Our team of talented designers, developers, and strategists work closely
-            with our clients to understand their unique needs and goals, and then craft custom solutions that help
-            them stand out in the digital landscape.
-          </p>
-        </div>
-      </div>
     </section>
-    <section class="w-full py-12 md:py-24 lg:py-32">
-      <div class="container px-4 md:px-6">
-        <div class="space-y-4">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-          <div aria-roledescription="carousel" class="relative w-full max-w-4xl" role="region">
-            <div class="overflow-hidden">
-              <div
-                class="-ml-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
-                style="transform: translate3d(0px, 0px, 0px);"
-              >
-                <div aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" role="group">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full"
-                    data-v0-t="card"
-                  >
-                    <div class="flex flex-col items-center justify-center gap-4 p-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-12 w-12 text-primary"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                        <path d="M2 12h20"></path>
-                      </svg>
-                      <h3 class="text-xl font-semibold">Web Design</h3>
-                      <p class="text-muted-foreground">
-                        Crafting visually stunning and user-friendly websites that captivate your audience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" role="group">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full"
-                    data-v0-t="card"
-                  >
-                    <div class="flex flex-col items-center justify-center gap-4 p-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-12 w-12 text-primary"
-                      >
-                        <path d="m3 11 18-5v12L3 14v-3z"></path>
-                        <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
-                      </svg>
-                      <h3 class="text-xl font-semibold">Digital Marketing</h3>
-                      <p class="text-muted-foreground">
-                        Developing and executing targeted digital marketing strategies to drive growth and
-                        engagement.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" role="group">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full"
-                    data-v0-t="card"
-                  >
-                    <div class="flex flex-col items-center justify-center gap-4 p-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-12 w-12 text-primary"
-                      >
-                        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                      </svg>
-                      <h3 class="text-xl font-semibold">Branding</h3>
-                      <p class="text-muted-foreground">
-                        Crafting unique and memorable brand identities that resonate with your target audience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" role="group">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full"
-                    data-v0-t="card"
-                  >
-                    <div class="flex flex-col items-center justify-center gap-4 p-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-12 w-12 text-primary"
-                      >
-                        <polyline points="16 18 22 12 16 6"></polyline>
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                      </svg>
-                      <h3 class="text-xl font-semibold">Web Development</h3>
-                      <p class="text-muted-foreground">
-                        Building custom, high-performing websites and web applications tailored to your needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" role="group">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full"
-                    data-v0-t="card"
-                  >
-                    <div class="flex flex-col items-center justify-center gap-4 p-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-12 w-12 text-primary"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M12 16v-4"></path>
-                        <path d="M12 8h.01"></path>
-                      </svg>
-                      <h3 class="text-xl font-semibold">Analytics</h3>
-                      <p class="text-muted-foreground">
-                        Providing in-depth data analysis and insights to optimize your online presence and
-                        performance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" role="group">
-                  <div
-                    class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full"
-                    data-v0-t="card"
-                  >
-                    <div class="flex flex-col items-center justify-center gap-4 p-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-12 w-12 text-primary"
-                      >
-                        <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
-                      </svg>
-                      <h3 class="text-xl font-semibold">Social Media</h3>
-                      <p class="text-muted-foreground">
-                        Crafting engaging social media strategies and content to connect with your audience.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="inline-flex shrink-0 items-center justify-center whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background font-medium shadow-sm hover:bg-accent hover:text-accent-foreground absolute h-8 w-8 rounded-full -left-12 top-1/2 -translate-y-1/2"
-              disabled=""
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-left h-4 w-4"
-              >
-                <path d="m12 19-7-7 7-7"></path>
-                <path d="M19 12H5"></path>
-              </svg>
-              <span class="sr-only">Previous slide</span>
-            </button>
-            <button
-              class="inline-flex shrink-0 items-center justify-center whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background font-medium shadow-sm hover:bg-accent hover:text-accent-foreground absolute h-8 w-8 rounded-full -right-12 top-1/2 -translate-y-1/2"
-              disabled=""
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right h-4 w-4"
-              >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-              <span class="sr-only">Next slide</span>
-            </button>
-          </div>
+
+    <section class="trusted-by">
+        <h2>Trusted By</h2>
+        <div class="logo-grid">
+            <!-- Add company logos here -->
+            <div>Logo 1</div>
+            <div>Logo 2</div>
+            <div>Logo 3</div>
+            <div>Logo 4</div>
         </div>
-      </div>
-    </section>
-    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
-      <div class="container px-4 md:px-6">
-        <div class="space-y-4">
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Trusted by</h2>
-          <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-            <img
-              src="/placeholder.svg"
-              width="140"
-              height="70"
-              alt="Logo"
-              class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-            />
-            <img
-              src="/placeholder.svg"
-              width="140"
-              height="70"
-              alt="Logo"
-              class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-            />
-            <img
-              src="/placeholder.svg"
-              width="140"
-              height="70"
-              alt="Logo"
-              class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-            />
-            <img
-              src="/placeholder.svg"
-              width="140"
-              height="70"
-              alt="Logo"
-              class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-            />
-            <img
-              src="/placeholder.svg"
-              width="140"
-              height="70"
-              alt="Logo"
-              class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-            />
-            <img
-              src="/placeholder.svg"
-              width="140"
-              height="70"
-              alt="Logo"
-              class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-            />
-          </div>
-          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full" data-v0-t="card">
-              <div class="flex flex-col items-start gap-4 p-6">
-                <div class="flex items-center gap-2">
-                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
-                    <img class="aspect-square h-full w-full" src="/placeholder-user.jpg" />
-                  </span>
-                  <div>
-                    <h4 class="text-lg font-semibold">John Doe</h4>
-                    <p class="text-muted-foreground">CEO, Acme Inc.</p>
-                  </div>
-                </div>
-                <p class="text-muted-foreground">
-                  "The Student Led Marketing Agency has been an invaluable\n partner in helping us create a stunning
-                  website that\n perfectly represents our brand. Their team's creativity\n and attention to detail
-                  are unparalleled."
-                </p>
-              </div>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <h3>John Doe</h3>
+                <p>CEO, Acme Inc.</p>
+                <p>"The Student Led Marketing Agency has been an invaluable partner in helping us create a stunning website that perfectly represents our brand. Their team's creativity and attention to detail are unparalleled."</p>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full" data-v0-t="card">
-              <div class="flex flex-col items-start gap-4 p-6">
-                <div class="flex items-center gap-2">
-                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
-                    <img class="aspect-square h-full w-full" src="/placeholder-user.jpg" />
-                  </span>
-                  <div>
-                    <h4 class="text-lg font-semibold">Jane Smith</h4>
-                    <p class="text-muted-foreground">Marketing Manager, XYZ Corp.</p>
-                  </div>
-                </div>
-                <p class="text-muted-foreground">
-                  "Working with the Student Led Marketing Agency has been a\n game-changer for our business. Their
-                  digital marketing\n expertise has helped us reach new heights and connect\n with our target
-                  audience in a more meaningful way."
-                </p>
-              </div>
+            <div class="testimonial">
+                <h3>Jane Smith</h3>
+                <p>Marketing Manager, XYZ Corp.</p>
+                <p>"Working with the Student Led Marketing Agency has been a game-changer for our business. Their digital marketing expertise has helped us reach new heights and connect with our target audience in a more meaningful way."</p>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm h-full w-full" data-v0-t="card">
-              <div class="flex flex-col items-start gap-4 p-6">
-                <div class="flex items-center gap-2">
-                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
-                    <img class="aspect-square h-full w-full" src="/placeholder-user.jpg" />
-                  </span>
-                  <div>
-                    <h4 class="text-lg font-semibold">Michael Johnson</h4>
-                    <p class="text-muted-foreground">Director of Marketing, Globex Inc.</p>
-                  </div>
-                </div>
-                <p class="text-muted-foreground">
-                  "The Student Led Marketing Agency has exceeded our\n expectations in every way. Their team's
-                  strategic\n thinking and innovative approach have helped us\n transform our online presence and
-                  drive significant\n growth for our business."
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-  </main>
-  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-    <p class="text-xs text-muted-foreground">© 2024 Student Led Marketing Agency. All rights reserved.</p>
-    <nav></nav>
-  </footer>
-</div>
+</body>
+</html>
