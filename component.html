@@ -13,7 +13,37 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #FFFFFF; /* Unified background color */
         }
+
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #F0F0F0; /* Same background color for consistency */
+        }
+
+        .why-us-about {
+            display: flex;
+            padding: 4rem 2rem;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            background-color: #F0F0F0; /* Unified background */
+            position: relative;
+        }
+
+        .services {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #F0F0F0; /* Unified background */
+        }
+
+        .trusted-by {
+            background-color: #F0F0F0; /* Unified background */
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -21,10 +51,12 @@
             padding: 1rem 2rem;
             background-color: #706E95;
         }
+
         .logo {
             font-weight: 700;
             font-size: 1.5rem;
         }
+
         .nav-button {
             padding: 0.5rem 1rem;
             background-color: white;
@@ -35,119 +67,154 @@
             font-weight: 500;
             font-family: 'Poppins', sans-serif;
         }
-        .header {
-            text-align: center;
-            padding: 4rem 2rem;
-        }
+
         .header h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
+
         .header h2 {
             font-size: 1.5rem;
             font-weight: 400;
             color: #6c757d;
         }
+
         .why-us-about {
             display: flex;
-            background-color: #6D738B;
             padding: 4rem 2rem;
             justify-content: center;
             align-items: center;
             text-align: left;
+            position: relative;
         }
-        .why-us, .about-us {
-            flex: 1;
-            padding: 0 2rem;
+
+        .about-us {
+            background: linear-gradient(135deg, #ECEBF9, #D1C6E7); /* Gradient background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            font-family: 'Poppins', sans-serif;
+            color: #333; /* Darker text color for better readability */
+            position: relative;
+            margin-left: 2rem;
+            margin-right: 2rem; /* Added to keep it centered */
+            margin-top: 5rem; /* Increased to account for image height */
+            padding: 2rem;
+            max-width: 600px; /* Limit width for more vertical space */
+            overflow: hidden; /* Ensure that any pseudo-elements do not overflow */
+            animation: fadeInUp 1s ease-out;
         }
+
+        .about-us-img {
+            position: absolute;
+            top: -5rem; /* Adjust to place the image above the box */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            max-width: 100px; /* Adjust size as needed */
+        }
+
         .why-us h1, .about-us h2 {
             font-size: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
+            position: relative;
+            z-index: 5; /* Ensure text is above the background */
         }
+
         .why-us h1 {
             margin-bottom: 2rem;
         }
+
         .why-us-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
         }
+
         .why-us-item {
             background-color: #ECEBF9;
             padding: 1rem;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,4);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            z-index: 1; /* Ensure items are above the background */
         }
+
+        .why-us-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            background-color: #D1C6E7; /* Change color on hover */
+        }
+
         .why-us-item h3 {
             font-size: 1.5rem;
             margin: 0;
         }
+
         .why-us-item p {
             font-size: 1rem;
             color: grey;
             margin: 0;
         }
+
         .services {
             padding: 4rem 2rem;
             text-align: center;
         }
+
         .service-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
+
         .service-item {
             background-color: #f8f9fa;
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
         .trusted-by {
             background-color: #f1f3f5;
             padding: 4rem 2rem;
             text-align: center;
         }
+
         .logo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
+
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
+
         .testimonial {
             background-color: white;
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .about-us {
-            flex: 1;
-            padding: 0 2rem;
-            text-align: center; /* Center the text */
-            font-family: 'Cabin', sans-serif; /* Apply the Cabin font */
-        }
-        .about-us h2 {
-            font-size: 2rem;
-            font-family: 'Poppins',sans-serif;
-            margin-bottom: 1rem;
-            font-weight: 700; /* Make the header bold */
-            color: #ECEBF9; /* Ensure color consistency */
-        }
-        .about-us p {
-            font-size: 1.4rem; /* Increase font size for better readability */
-            color: #ECEBF9; /* Ensure color consistency */
-            font-weight: 400; /* Normal weight for paragraph text */
-            margin: 8; /* Remove default margins */
-            padding: 0; /* Remove padding */
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -163,29 +230,9 @@
     </header>
 
     <section class="why-us-about">
-        <div class="why-us">
-            <h1 style="color:#ECEBF9">Why Us?</h1>
-            <div class="why-us-grid">
-                <div class="why-us-item">
-                    <h3>$2.5M+</h3>
-                    <p>Total Revenue Created</p>
-                </div>
-                <div class="why-us-item">
-                    <h3>250+</h3>
-                    <p>Clients Helped</p>
-                </div>
-                <div class="why-us-item">
-                    <h3>100M+</h3>
-                    <p>Media Impressions</p>
-                </div>
-                <div class="why-us-item">
-                    <h3>5</h3>
-                    <p>Services</p>
-                </div>
-            </div>
-        </div>
+        <img src="ABOUT.png" class="about-us-img" alt="About Us"> <!-- Moved image outside the box -->
+        <img src="Stats.png" style="width:35rem;height:35rem;margin-left:3rem;margin-top:1rem;" alt="Operation Nexus Stats">
         <div class="about-us">
-            <h2>About Us</h2>
             <p>We are a student-led marketing agency that specializes in creating engaging and effective websites for businesses and organizations. Our team of talented designers, developers, and strategists work closely with our clients to understand their unique needs and goals, and then craft custom solutions that help them stand out in the digital landscape.</p>
         </div>
     </section>
