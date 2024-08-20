@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Led Marketing Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
         body, html {
             font-family: 'Poppins', sans-serif;
@@ -203,6 +213,119 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        /* New Meet Our Execs Section */
+        body, html {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF; /* Unified background color */
+        }
+
+        .meet-our-execs {
+            background-color: #4b3b86; /* Darker purple background */
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .meet-our-execs h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 2rem;
+        }
+
+        .execs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .execs-grid:last-child {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .exec-circle {
+            width: 150px;
+            height: 150px;
+            background-color: #5c4f95;
+            border-color: rgb(76, 38, 85);
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0 10px 10px rgba(241, 238, 255, 0.4);
+            overflow: hidden;
+            cursor:pointer;
+            border-style: solid;
+        }
+
+        .execs-circle:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+        }
+
+        .exec-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-color: white;
+        }
+
+        .exec-circle:hover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+        }
+
+        .exec-name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #ffffff;
+            margin-top: 1rem;
+        }
+
+        .exec-title {
+            font-size: 0.8rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+        }
+        .execs-button {
+            display: inline-block;
+            margin-bottom:3rem; /* Adjusted spacing */
+            padding: 1rem 2rem;
+            background-color: #ecebf9; /* Dark purple button */
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(241, 238, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .execs-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(237, 233, 255, 0.7);
+        }
+
+        .execs-button .cta-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #ffffff; /* Bright white text */
+            margin-bottom: 0;
+        }
+
+        .execs-button .subtext {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+            margin-top: 0.2rem; /* Adjusted for spacing */
+            color: #ffffff; /* Bright white text */
+        }
     </style>
 </head>
 <body>
@@ -279,5 +402,68 @@
             </div>
         </div>
     </section>
+    <section class="meet-our-execs">
+        <h2>Meet Our Executive Team</h2>
+        <button class="execs-button">
+            <span class="execs-text" style="color:black; font-family:Poppins;sans-serif;">Speak to our team today</span>
+            <br>
+            <span class="subtext" style="color:black;">Schedule your free consultation call now</span>
+        </button>
+        <div class="execs-grid">
+            <div>
+                <div class="exec-circle">
+                    <img src="exec1.jpg" alt="Exec 1">
+                </div>
+                <div class="exec-name">Carmen Teng</div>
+                <div class="exec-title">CEO ・ Founder</div>
+            </div>
+            <div>
+                <div class="exec-circle">
+                    <img src="exec2.jpg" alt="Exec 2">
+                </div>
+                <div class="exec-name">Kaitlyn Ye</div>
+                <div class="exec-title">COO ・ Founder</div>
+            </div>
+            <div>
+                <div class="exec-circle">
+                    <img src="dummy.png.jpg" alt="Exec 3">
+                </div>
+                <div class="exec-name">Aditi Chhawacharia</div>
+                <div class="exec-title">CTO ・ Founder</div>
+            </div>
+        </div>
+        <div class="execs-grid">
+            <div>
+                <div class="exec-circle">
+                    <img src="exec4.jpg" alt="Exec 4">
+                </div>
+                <div class="exec-name">Hong-An Phan</div>
+                <div class="exec-title">CMO</div>
+            </div>
+            <div>
+                <div class="exec-circle">
+                    <img src="exec5.jpg" alt="Exec 5">
+                </div>
+                <div class="exec-name">Adalee Chuang</div>
+                <div class="exec-title">CMO</div>
+            </div>
+            <div>
+                <div class="exec-circle">
+                    <img src="exec6.jpg" alt="Exec 6">
+                </div>
+                <div class="exec-name">Fimii Ma</div>
+                <div class="exec-title">Former CEO ・ Founder</div>
+            </div>
+            <div>
+                <div class="exec-circle">
+                    <img src="exec7.jpg" alt="Exec 7">
+                </div>
+                <div class="exec-name">Yaajyansh Bhardwaj</div>
+                <div class="exec-title">Former COO ・ Founder</div>
+            </div>
+        </div>
+    </section>
+    
+
 </body>
 </html>
